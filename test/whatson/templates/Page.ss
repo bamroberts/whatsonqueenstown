@@ -67,8 +67,11 @@ span.glyphicon b {
 		<div class="page-header">
 			<h1>Whats on QT</h1>
 		</div>
-		$Layout
-		
+		<% if Layout %>
+			$Layout
+		<% else %>
+			$Form
+		<% end_if %>
 		</div>
 			
 	</div>
