@@ -1,0 +1,64 @@
+.input-group-addon {
+	width:auto;
+}
+
+div.j6currency input.text {
+	margin-top: 0px;
+	width:100px;
+}
+
+.nav .dropdown .alert {
+	margin: 20px 0 0 0;
+}
+
+.semi-transparent {opacity:0.5;}
+
+table .btn-group { 
+    white-space: nowrap; // prevent buttons from wrapping when in tight spaces (e.g., the table on the tests page)	
+}
+
+table .btn-group  .btn {
+    float: inherit;
+}
+
+table .btn-group .btn + .btn {
+    margin-left: -5px;
+    }
+
+	
+	.table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+		vertical-align: top;
+	}
+	
+.pagination > li > div > a {
+	position: relative;
+	float: left;
+	padding: 6px 12px;
+	margin-left: -1px;
+	line-height: 1.428571429;
+	text-decoration: none;
+	background-color: #ffffff;
+	border: 1px solid #dddddd;
+}
+
+
+form h1[id^="Form"], form h1.form,
+form h2[id^="Form"], form h2.form,
+form h3[id^="Form"], form h3.form,
+form h4[id^="Form"], form h4.form,
+form h5[id^="Form"], form h5.form,
+form h6[id^="Form"], form h6.form{
+	margin-bottom: 7px;
+	margin-top: 0;
+	width: 25%;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+	position: relative;
+	text-align:right;
+}
+
+.bold-label label, bold-label.label {
+	font-weight:bold;
+	padding-right: 30px !important;
+} 

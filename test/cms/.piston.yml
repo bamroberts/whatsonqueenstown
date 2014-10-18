@@ -1,0 +1,8 @@
+--- 
+format: 1
+handler: 
+  commit: 20161972b89489d8d1c062eecf469996601c5c9b
+  branch: "2.4"
+lock: false
+repository_class: Piston::Git::Repository
+repository_url: https://github.com/silverstripe/silverstripe-cms.git
