@@ -1,0 +1,8 @@
+--- 
+format: 1
+handler: 
+  piston:remote-revision: 17006
+  piston:uuid: e8da1e57-ad68-4eba-88c3-bf262e02792a
+lock: false
+repository_class: Piston::Svn::Repository
+repository_url: http://alpha.xebidy.com/svn/modules/twitter-bootstrap/trunk

@@ -1,0 +1,8 @@
+--- 
+format: 1
+handler: 
+  commit: 9bf3ae9a190effefc6322e79c702c700262de84a
+  branch: "2.4"
+lock: false
+repository_class: Piston::Git::Repository
+repository_url: https://github.com/silverstripe/sapphire.git
