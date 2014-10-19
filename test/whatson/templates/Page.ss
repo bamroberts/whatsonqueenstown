@@ -43,7 +43,7 @@
 			background-color: rgba(200,50,50,0.1);
 		}
 .bg {
-	background-image: url(http://whatsonqueenstown.co/wp-content/uploads/2014/10/mic.jpg);
+	background-image: url(http://whatsonqueenstown.co/wp-content/uploads/2014/10/mic-med1.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
