@@ -21,6 +21,8 @@ class Venue extends DataObject {
 		'Opening Times' => "Text",
 		'FacebookLink' => "Text",
 		'Website' => "Varchar(255)",
+		'CategoryList' => "Varchar(255)",
+		'active' => "Boolean"
 	);
 	static $has_many = array(
 		'Events' => 'Event',
@@ -31,7 +33,8 @@ class Venue extends DataObject {
 		'Owner' => 'Member',
 		'Logo' => 'Photo'
 	);
-	
+
+	static $defaults = array('Active' => 1);
 
 }
 
@@ -43,7 +46,8 @@ class Event extends DataObject {
 		'Date' => "Date",
 		'Time' => "Time",
 		'Blurb' => "Text",
-		'Opening Times' => "Text",
+		'CategoryList' => "Varchar(255)",
+		'Active' => "Boolean(1)"
 	);
 	static $has_one = array(
 		'Venue' => 'Venue',
@@ -53,6 +57,7 @@ class Event extends DataObject {
 		'Categories' => 'Event_Category',
 		//'Images' => 'Event_Image'
 	);
+	static $defaults = array('Active' => 1);
 
 	function getVenueLogo($width = 110, $height = 90) {
 		$venue = $this->Venue();
