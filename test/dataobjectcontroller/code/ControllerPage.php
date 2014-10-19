@@ -61,11 +61,7 @@ class ControllerPage_Controller extends Page_Controller {
 		if(!ClassInfo::exists($this->Controller)) {return parent::handleRequest($request);}
 		
 		$class = $this->Controller;
-		$client = Client::get_current();
 		
-		if($client && $client->Theme && class_exists("{$client->Theme}_{$class}")) {
-			$class = "{$client->Theme}_{$class}";
-		}
 		
 		$controller = new $class($this->dataRecord);
 		$this->ControllerObject = $controller;

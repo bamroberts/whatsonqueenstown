@@ -42,8 +42,28 @@
 			border: 1px solid rgba(200,50,50,0.8);
 			background-color: rgba(200,50,50,0.1);
 		}
+.bg {
+	background-image: url(http://whatsonqueenstown.co/wp-content/uploads/2014/10/mic.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 
-g.glyphicon {border:2px solid red; border-radius:10px; padding:3px;}
+.logo {
+	
+	width: 300px;
+	padding: 133px 0 0 0;
+	height: 0;
+	background: url("http://whatsonqueenstown.co/wp-content/uploads/2014/10/Whats-on-Queenstown-300x133.png") no-repeat;
+	overflow: hidden;
+	margin:0 0 0 20px;
+
+}
+
 span.glyphicon b {
 	font-size: 15px;
 	position: relative;
@@ -57,21 +77,56 @@ span.glyphicon b {
   text-overflow: ellipsis;
 }
 
+.main {
+	background-color: rgba(0,0,0,0.4);
+}
+
 .media-footer .btn {padding: 0px 2px;}
+
+.day {
+	margin-right:10px;
+}
+.day .day1 {
+	background-color:
+}
+
+.day-title {
+	color:#eee;
+}
+
+.filter {
+	background-color: rgba(255,255,255,0.8);
+	padding:20px;
+	
+}
+
+.filter label {
+	font-weight:bold;
+}
+
+.sub-filter {
+	margin-left: 12px;
+	
+}
+.sub-filter label {
+	font-weight: normal;
+}
 		
 	</style>
+
   </head>
-  <body>
+  <body class="bg">
     
 	<div class="container">
 		<div class="page-header">
-			<h1>Whats on QT</h1>
+			<h1 class="logo">Whats on QT</h1>
 		</div>
-		<% if Layout %>
-			$Layout
-		<% else %>
-			$Form
-		<% end_if %>
+		<div class="container main">
+			<% if Layout %>
+				$Layout
+			<% else %>
+				$Form
+			<% end_if %>
 		</div>
 			
 	</div>
@@ -79,8 +134,7 @@ span.glyphicon b {
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="whatson/js/bootstrap.min.js"></script>
-	<script>
-		$('[data-toggle="tooltip"]').tooltip();
-	</script>
+	<% require javascript(whatson/js/filter.js) %>
+
   </body>
 </html>
